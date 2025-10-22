@@ -1,0 +1,36 @@
+# Minimal Data Analytics Portfolio
+
+This is a minimal static portfolio site for data analytics work. Add your JPEG visualizations into `assets/images/` and update the captions in `index.html` as needed.
+
+Files
+- `index.html` — main portfolio page
+- `assets/css/style.css` — styles
+- `assets/images/` — put your JPEGs here (e.g., `visual-1.jpg`, `visual-2.jpg`)
+- `.gitattributes` — example LFS rules for JPEGs (optional)
+- `.gitignore` — suggested ignores
+
+How to use
+1. Add your images to `assets/images/`. Recommended names used in the template:
+   - `assets/images/visual-1.jpg`
+   - `assets/images/visual-2.jpg`
+2. Preview locally: open `index.html` in a browser.
+3. Push to GitHub and optionally enable GitHub Pages:
+   - Settings → Pages → Branch: `main` (or the branch you use) → Folder: `/ (root)` or `/docs`
+   - If you prefer `/docs`, move site files into a `docs/` folder or update the Pages settings.
+
+Recommended workflow
+- For a few small images: upload via GitHub web UI or use `git` normally.
+- For many or very large images: use Git LFS.
+  - Install Git LFS (https://git-lfs.github.com/)
+  - Run `git lfs install`
+  - Add rule (already in `.gitattributes`) or run:
+    `git lfs track "assets/images/*.jpg"`
+
+Image optimization tips
+- Resize and compress images for web (e.g., convert to 1200px max and compress to 70–85% quality).
+- Tools: ImageMagick, jpegoptim, mozjpeg.
+
+If you want, I can:
+- Create a branch and open a PR in a repository you name (give me owner/repo).
+- Swap this into a Jekyll scaffold or a small static site generator template (Hugo / MkDocs).
+
